@@ -1,4 +1,4 @@
-adv_weapons.is_opponent = function(a, b) return a == b end
+adv_weapons.is_opponent = function(a, b) return a ~= b end
 
 players = {}
 last_use = {}
