@@ -244,7 +244,7 @@ minetest.register_entity("adv_weapons:ascent_aid", {
         end
         if staticdata ~= "" then
             self._size = minetest.parse_json(staticdata)
-            adjust_rope(self.object, size)
+            adjust_rope(self.object, self._size)
         end
     end,
     get_staticdata = function(self)
@@ -311,9 +311,9 @@ minetest.register_entity("adv_weapons:ascent_aid", {
             local direction = self._direction--clicker:get_look_dir()
             set_rotation(obj, direction)
             local factor = 0
-            if control.up and line_off < self._length - 0.2 then
+            if control.up and line_off < self._length - 0.3 then
                 factor = 1
-            elseif control.down and line_off > 0.2 then
+            elseif control.down and line_off > 0.3 then
                 factor = -1
             end
             obj:set_velocity(vector.add(obj:get_velocity(), vector.multiply(direction, factor*0.5)))

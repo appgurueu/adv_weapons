@@ -7,6 +7,10 @@ Adds a variety of advanced weapons.
 Depends on `modlib` and `tnt`.
 Written by LMD aka appguru(eu). Licensed under the GPLv3.
 
+## Screenshot
+
+![Screenshot](screenshot.png)
+
 ## Features
 
 * Explosives
