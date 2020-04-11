@@ -11,6 +11,15 @@ Written by LMD aka appguru(eu). Licensed under the GPLv3.
 
 ![Screenshot](screenshot.png)
 
+## API
+
+```lua
+-- override this, should return true if names are opponents
+function adv_weapons.is_opponent(playername1, playername2)
+    return playername1 ~= playername2
+end
+```
+
 ## Features
 
 * Explosives
@@ -27,6 +36,7 @@ Written by LMD aka appguru(eu). Licensed under the GPLv3.
       * Go forwards/backwards on the beam
   * Turrets
     * Gatlin Gun
+      * Right-click turret base with gatlin barrel to arm
       * High reload rate, low damage & range
       * Turns slowly, so you can try dodging
       * Only attacks owners opponents
