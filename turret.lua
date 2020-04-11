@@ -135,7 +135,6 @@ minetest.register_entity("adv_weapons:turret_gatlin_barrel", {
 
 -- HACK should use item instead
 minetest.register_node("adv_weapons:gatlin_barrel", {
-    groups = {not_in_creative_inventory = 1},
     description = "Gatlin Barrel",
     drawtype = "mesh",
     mesh = "adv_weapons_gatlin_barrel.obj",
