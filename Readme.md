@@ -5,7 +5,7 @@ Adds a variety of advanced weapons.
 ## About
 
 Depends on `modlib` and `tnt`.
-Written by LMD aka appguru(eu). Licensed under the GPLv3.
+Written by LMD aka appguru(eu). Licensed under the MIT license.
 
 ## Screenshot
 
