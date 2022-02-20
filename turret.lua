@@ -52,9 +52,10 @@ minetest.register_entity("adv_weapons:turret_gatlin_barrel", {
         return self._owner
     end,
     on_step = function(self, dtime)
-        if minetest.get_node(self.object:get_pos()).name ~= "adv_weapons:turret_base" then
+        local pos = self.object:get_pos()
+        if minetest.get_node(pos).name ~= "adv_weapons:turret_base" then
             self.object:remove()
-            minetest.add_item(self.object:get_pos(), "adv_weapons:gatlin_barrel")
+            minetest.add_item(pos, "adv_weapons:gatlin_barrel")
             return
         end
         self._dtime = self._dtime + dtime
